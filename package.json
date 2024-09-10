@@ -1,0 +1,14 @@
+{
+  "name": "thesismaster",
+  "version": "1.0.0",
+  "description": "4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luk027",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}   

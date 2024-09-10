@@ -9,39 +9,81 @@
     <link href="./output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="relative">
 
-    <!-- Hero Section  -->
-    <section
-        class="s1 sm:px-[10vh] h-screen flex flex-col-reverse sm:flex-row justify-center sm:justify-evenly align-middle">
+    <!-- <nav class="lg:px-[10vh] sticky z-30 top-0 flex justify-between items-center py-2 shadow backdrop-blur-sm">
+        <div class="flex font-mono">
+            <img src="../images/nav-img.png" alt="logo" class="h-14">
+            <div>T<span class="text-[#ff725e]">M</span></div>
+        </div>
 
-        <div class="text-center flex flex-col justify-center align-middle">
-            <h1
-                class="text-[#263238]  text-4xl sm:text-5xl lg:text-8xl font-extrabold tracking-tighter py-2 sm:pt-6 sm:pb-3">
-                ThesisMaster
-            </h1>
-            <span class="text-[#303f46] text-xl sm:text-2xl pb-1 flex justify-center gap-2 ">
-                Need Academic Help? Contact Us Today!
-            </span>
-            <div>
-                <a href="https://wa.me/91xxxxxxxxxx">
-                    <button
-                        class="w-[150px] sm:w-[180px] text-[#263238] text-xl font-semibold sm:text-2xl 
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+        cb=googleTranslateElementInit">
+        </script>
+    </nav> -->
+
+    <!-- Landing Page  -->
+    <section class="s1">
+
+        <!-- Navbar  -->
+        <nav
+            class="lg:px-[15vh] px-4 fixed z-50 w-[100vw] top-0 flex justify-between items-center py-2 bg-slate-200/50 shadow backdrop-blur-sm">
+            <div class="flex font-mono">
+                <img src="../images/nav-img.png" alt="logo" class="h-12">
+                <div>T<span class="text-[#ff725e]">M</span></div>
+            </div>
+
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement(
+                        { pageLanguage: 'en' },
+                        'google_translate_element'
+                    );
+                }
+            </script>
+            <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </nav>
+        <!-- Hero section  -->
+        <div
+            class="h-screen lg:px-[10vh] flex flex-col-reverse sm:flex-row justify-center sm:justify-evenly align-middle">
+            <div class="text-center flex flex-col justify-center align-middle">
+                <h1
+                    class="text-[#263238] text-4xl sm:text-5xl lg:text-8xl font-extrabold tracking-tighter py-2  sm:pb-3">
+                    ThesisMaster
+                </h1>
+                <span class="text-[#303f46] text-xl sm:text-2xl pb-1 flex justify-center gap-2 ">
+                    Need Academic Help? Contact Us Today!
+                </span>
+                <div>
+                    <a href="https://wa.me/91xxxxxxxxxx">
+                        <button
+                            class="w-[150px] sm:w-[180px] text-[#263238] text-xl font-semibold sm:text-2xl 
                         gap-2 py-2 bg-[#ff725e] border-2 rounded-md border-[#303f46]
                         cursor-pointer shadow-[5px_5px_0px_0px_rgba(178,80,66)]  hover:bg-slate-300 hover:shadow-slate-500">
-                        Contact us
-                    </button>
-                </a>
+                            Contact us
+                        </button>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="grid justify-center items-center">
-            <img src="../images/hero.svg" alt="hero" class="hero-img w-full h-fit sm:h-2/3" />
+            <div class="grid justify-center items-center">
+                <img src="../images/hero.svg" alt="hero" class="hero-img w-full h-fit sm:h-2/3" />
+            </div>
         </div>
     </section>
 
     <!-- Business Info  -->
-    <section class="s2 py-14  px-8  sm:px-[25vh]">
-        <div class="grid sm:grid-cols-3 s2-shadow ">
+    <section class="s2 py-14  px-8  lg:px-[25vh]">
+        <div class="grid lg:grid-cols-3 s2-shadow ">
             <div class="relative isolate flex flex-col justify-end overflow-hidden">
                 <img src="../images/s2img.jpg" alt="Our Goals" class="rounded-tr-md rounded-tl-md sm:rounded-tr-none sm:rounded-bl-md
                 absolute inset-0 w-full h-full object-cover">
@@ -50,7 +92,7 @@
                 <div class="z-10 pl-2 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">What we do?</div>
             </div>
             <div
-                class="sm:col-span-2 text-gray-200 bg-[#303f46] p-4 sm:p-6 rounded-bl-md rounded-br-md sm:rounded-bl-none sm:rounded-tr-md">
+                class="lg:col-span-2 text-gray-200 bg-[#303f46] p-4 sm:p-6 rounded-bl-md rounded-br-md sm:rounded-bl-none sm:rounded-tr-md">
                 <hr class="h-px mt-8 bg-gray-200 border-0">
                 <br>
                 <div class="text-justify">
@@ -67,7 +109,7 @@
                         class="w-[150px] sm:w-[180px] text-[#263238] text-xl font-semibold sm:text-2xl 
                         gap-2 py-2 bg-[#ff725e] border-2 rounded-md border-[#303f46]
                         cursor-pointer shadow-[5px_5px_0px_0px_rgba(178,80,66)]  hover:bg-slate-300 hover:shadow-slate-500">
-                        Contact us
+                        Place Your Order
                     </button>
                 </a>
             </div>
@@ -75,29 +117,30 @@
     </section>
 
     <!-- Features -->
-    <section class="s3 py-14 px-8  sm:px-[25vh]">
-            <div class="text-[#263238] text-justify text-2xl sm:text-3xl font-bold">
-                Our platform offers a wide range of services to meet the unique challenges faced by students. Explore some of the key features that set us apart:
-            </div>
-            <div class="text-[#303f46] text-xl sm:text-2xl">
-                <ul class="list-disc grid grid-cols-1 sm:grid-cols-2  p-6  sm:py-12 gap-2 sm:gap-4">
-                    <li>Assignment writing</li>
-                    <li>Thesis Writing</li>   
-                    <li>Research Proposals</li>   
-                    <li>Dissertations</li>   
-                    <li>Topic Selection</li>   
-                    <li>Review Articles</li>   
-                    <li>Research Articles</li>   
-                    <li>Plagarism Removal(Turnitin)</li>   
-                    <li>Proofreading/Corrections</li>
-                    <li>Secure and Confidential Services</li>
-                </ul>
-            </div>
-            <hr class="h-px mt-6 bg-[#ff725e] border-0">
+    <section class="s3 py-14 px-8  lg:px-[25vh]">
+        <div class="text-[#263238] text-justify text-2xl sm:text-3xl font-bold">
+            Our platform offers a wide range of services to meet the unique challenges faced by students. Explore some
+            of the key features that set us apart:
+        </div>
+        <div class="text-[#303f46] text-xl sm:text-2xl">
+            <ul class="list-disc grid grid-cols-1 sm:grid-cols-2  p-6  sm:py-12 gap-2 sm:gap-4">
+                <li>Assignment writing</li>
+                <li>Thesis Writing</li>
+                <li>Research Proposals</li>
+                <li>Dissertations</li>
+                <li>Topic Selection</li>
+                <li>Review Articles</li>
+                <li>Research Articles</li>
+                <li>Plagarism Removal(Turnitin)</li>
+                <li>Proofreading/Corrections</li>
+                <li>Secure and Confidential Services</li>
+            </ul>
+        </div>
+        <hr class="h-px mt-6 bg-[#ff725e] border-0">
     </section>
 
     <!-- Contact us -->
-    <section class="s4 py-14  px-8  sm:px-[25vh] flex justify-center align-middle">
+    <section class="s4 py-14  px-8  lg:px-[25vh] flex justify-center align-middle">
         <div class="text-[#263238]  text-2xl sm:text-3xl font-bold flex flex-col text-center gap-2">
             <span>Need help with assignments?</span>
             <span>Connect with professionals for help
@@ -115,8 +158,9 @@
 
     <!-- Credits -->
     <footer class='flex justify-end mt-1 bg-[#263238] text-white text-base gap-2 font-serif'>
-        Copyright &copy; <span id="showYear"></span>
-        <a href='https://www.linkedin.com/in/lookmangohil' target='_blank' class="hover:underline">luk027 &nbsp; </a>
+        &copy; <span id="showYear"></span>
+        <a href='https://www.linkedin.com/in/lookmangohil' target='_blank' class="hover:underline">luk027 &nbsp; &nbsp;
+        </a>
     </footer>
 
 </body>

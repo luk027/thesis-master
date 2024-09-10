@@ -952,7 +952,7 @@ li::marker {
   background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
-/* .goog-logo-link {
+.goog-logo-link {
   display:none !important;
 }
 
@@ -970,13 +970,14 @@ li::marker {
   padding: 2px;
   color: #263238 !important;
 }
+
 #google_translate_element {
   color: transparent;
 }
 
 #google_translate_element a {
   display: none;
-} */
+}
 
 .hover\:bg-slate-300:hover {
   --tw-bg-opacity: 1;

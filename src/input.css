@@ -51,6 +51,7 @@ li::marker {
   border-radius: 6px;
   padding: 2px;
   color: #263238 !important;
+  cursor: pointer;
 }
 #google_translate_element {
   color: transparent;
@@ -58,4 +59,108 @@ li::marker {
 
 #google_translate_element a {
   display: none;
+}
+
+.wrapper {
+  padding: 16px;
+  /* width: 90%; */
+  /* max-width: 1536px; */
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  /* mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  ); */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #f0e9ee 10%, #f0e9ee 90%, transparent)
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+.wrapper div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  color: #263238 ;
+}
+
+.itemRight {
+  width: 200px;
+  height: 70px;
+  background-color: #ff725e;
+  border: 1px solid rgba(178, 80, 66, 1);
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  box-shadow:#263238 1.95px 1.95px 2.6px;
+}
+.itemLeft{
+  width: 200px;
+  height: 40px;
+  background-color: #ff725e;
+  border: 1px solid rgba(178, 80, 66, 1);
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  box-shadow: #263238 1.95px 1.95px 2.6px;
+}
+
+.itemLeft {
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: max(calc(200px * 8), calc(100% + 200px));
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }

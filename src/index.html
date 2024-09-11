@@ -25,7 +25,7 @@
             <script>
                 function googleTranslateElementInit() {
                     new google.translate.TranslateElement(
-                        { pageLanguage: 'en' },
+                        { pageLanguage: 'en', includedLanguages: 'en,it,fr,ru,tr,de,hi,'},
                         'google_translate_element'
                     );
                 }
@@ -34,7 +34,7 @@
         </nav>
         <!-- Hero section  -->
         <div
-            class="h-screen lg:px-[10vh] flex flex-col-reverse sm:flex-row justify-center sm:justify-evenly align-middle">
+            class="h-[70vh] lg:px-[10vh] flex flex-col-reverse sm:flex-row justify-center sm:justify-evenly align-middle">
             <div class="text-center flex flex-col justify-center align-middle">
                 <h1
                     class="text-[#263238] text-4xl sm:text-5xl lg:text-8xl font-extrabold tracking-tighter py-2  sm:pb-3">
@@ -44,7 +44,7 @@
                     Need Academic Help? Contact Us Today!
                 </span>
                 <div>
-                    <a href="https://wa.me/91xxxxxxxxxx">
+                    <a id="contact-btn">
                         <button
                             class="w-[150px] sm:w-[180px] text-[#263238] text-xl font-semibold sm:text-2xl 
                         gap-2 py-2 bg-[#ff725e] border-2 rounded-md border-[#303f46]
@@ -52,11 +52,35 @@
                             Contact us
                         </button>
                     </a>
-                </div>
+                </div>  
             </div>
             <div class="grid justify-center items-center">
                 <img src="images/hero.svg" alt="hero" class="hero-img w-full h-fit sm:h-2/3" />
             </div>
+        </div>
+        <!-- scroll  -->
+        <div class="h-[30vh] lg:px-[15vh] py-7 sm:py-0 ">
+            <div class="wrapper h-16">
+                <div class="itemLeft item1">Assignment</div>
+                <div class="itemLeft item2">Dissertations</div>
+                <div class="itemLeft item3">Plagarism Removal</div>
+                <div class="itemLeft item4">Research Articles</div>
+                <div class="itemLeft item5">Research Proposals</div>
+                <div class="itemLeft item6">Review Articles</div>
+                <div class="itemLeft item7">Secure</div>
+                <div class="itemLeft item8">Thesis</div>
+            </div>
+            <div class="wrapper h-24">
+                <div class="itemRight item1">Thesis Writing</div>
+                <div class="itemRight item2">Topic Selection</div>
+                <div class="itemRight item3">Secure</div>
+                <div class="itemRight item4">Reasonable Charges</div>
+                <div class="itemRight item5">Proofreading</div>
+                <div class="itemRight item6">Corrections</div>
+                <div class="itemRight item7">Confidential Services</div>
+                <div class="itemRight item8">Assignment</div>
+            </div>
+        </div>
         </div>
     </section>
 

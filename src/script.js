@@ -17,8 +17,16 @@ const waLink = `https://wa.me/${decryptedData}`;
 
 
 
-const contactBtn = document.getElementById('contact-btn');
-contactBtn.addEventListener('click', function () {
+const contactBtn1 = document.getElementById('contact-btn1');
+contactBtn1.addEventListener('click', function () {
+    window.location.href = waLink;
+});
+const contactBtn2 = document.getElementById('contact-btn2');
+contactBtn2.addEventListener('click', function () {
+    window.location.href = waLink;
+});
+const contactBtn3 = document.getElementById('contact-btn3');
+contactBtn3.addEventListener('click', function () {
     window.location.href = waLink;
 });
 
